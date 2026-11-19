@@ -146,17 +146,4 @@
     "node": "^18.20.2 || >=20.9.0",
     "pnpm": "^10 || ^11"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "@swc/core",
-      "esbuild",
-      "sharp",
-      "unrs-resolver"
-    ],
-    "ignoredBuiltDependencies": [
-      "@parcel/watcher",
-      "@swc/core"
-    ]
-  }
 }
