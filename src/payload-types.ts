@@ -1838,6 +1838,7 @@ export interface Brochure {
    * Alternative text for accessibility (e.g. "Download OWGELS Oxygen Concentrator Brochure PDF")
    */
   alt?: string | null;
+  prefix?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -3890,6 +3891,7 @@ export interface BrochuresSelect<T extends boolean = true> {
   title?: T;
   description?: T;
   alt?: T;
+  prefix?: T;
   updatedAt?: T;
   createdAt?: T;
   url?: T;

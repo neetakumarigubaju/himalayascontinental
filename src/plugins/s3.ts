@@ -13,6 +13,14 @@ export const s3StoragePlugin = s3Storage({
         return `/api/media/file/${filename}`;
       },
     },
+    // ─── brochures → S3 storage ────────────────────────────────────
+    brochures: {
+      prefix: "brochures",
+      generateFileURL: ({ filename }) => {
+        if (!filename) return "";
+        return `/api/brochures/file/${filename}`;
+      },
+    },
   },
 
   bucket: systemConfig.S3_BUCKET,
